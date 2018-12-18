@@ -6,12 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andrea Malortigue</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        
     <a href="https://www.facebook.com/profile.php?id=100000098511528&ref=bookmarks" class="fa fa-facebook"></a>
     <a href="https://www.linkedin.com/in/andrea-malortigue/" class="fa fa-linkedin"></a>
     <a href="https://www.instagram.com/and_malortigue/" class="fa fa-instagram"></a>
-</head>
-<body>
-    
+        <nav>
+            <ul>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#workExperience">Work Experience</a></li>
+                <li><a href="#Activities">Activities</a></li>
+            </ul>
+        </nav>
+</header>
     
     <h1> Andrea Malortigue</h1>
     <h2> Second year Computer Science with Business student at the University of Bath</h2>
@@ -19,7 +30,7 @@
    
    
 
-    <div class="Skills">
+    <div id="Skills">
    <H3>
        Skills
    </H3>
@@ -31,7 +42,7 @@
    </ul>
 </div>
 <br>
-<div class="Education">
+<div id="Education">
    <h3>Education</h3>
    <ul>
        <span>September 2013 - June 2017</span>
@@ -48,7 +59,7 @@
    </ul>
 </div>
 <br>
-<div class="workExperience">
+<div id="workExperience">
     <h3> Work Experience</h3>
     <ul>
         <span>June 2017 - September 2017</span>
@@ -60,20 +71,24 @@
     </ul>
 </div>
 <br>
-<div class="passions"></div>
+<div id="Activities">
     <h3> Activities</h3>
-    <aside>
-            <img src="pics/photoVoile.jpg" alt="sailing pic" class="sailingPic">
-        
-    </aside>
-    <section>
-        <p>dscdjskjdksxklxlsxmldlsxlsxl,k,xkx,k,sklxwlswlx;</p>
-    </section>
     
+            <img src="pics/photoVoile.jpg" alt="sailing pic" class="sailingPic">
+        <br>
+        <p>Sailing takes an important place in my life after 4 years of fleet competition in France. 
+            I participated to four regional championships, in of which I won,
+             and 2 National championships.
+            Since joining University, I integrated the team racing team,
+             leading Bath Performance Squad to countless
+            victories.
+        </p>
+
     
     
 </div>
-<br>
+
+
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css?family=B612+Mono|Montserrat');
@@ -87,6 +102,7 @@ h2{
 }
 h3{
     font-family: 'B612 Mono', monospace;
+    padding-left: 10px;
     
 }
 .school{
@@ -102,9 +118,37 @@ span{
 aside{
     float: right;
 }
+header{
+    background: gray;
+   
+}
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    float: left;
+    display: inline;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+header a:hover{
+    color: #f3fcb8;
+}
+header nav{
+    float:right;
+    margin-top: 10px;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #f3fcb8;
+    margin: 0;
+    padding: 0;
 }
 img{
     display: block;
@@ -119,20 +163,24 @@ img{
   text-align: center;
   color: white;  
 }
-section{
-    float: left;
+
+.fa:hover{
+    color: #f3fcb8;
 }
-.fa-facebook:hover{
-    color: #3b5998;
-}
-.fa-linkedin:hover{
-    color:  #0e76a8;
-}
-.fa-instagram:hover{
-    color:#fb3958;
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-
+#Activities img{
+    
+    float: right;
+}
+#Activities p{
+   text-align: left;
+    padding-left: 15px;
+}
 
 
 </style>
